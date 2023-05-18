@@ -1,0 +1,15 @@
+:root {
+    --color-background: #00acc1;
+    --color-text-signin: #7679EE;
+    --color-ancher-text: #3AC582;
+    --color-chatbox-icon: #24b57c;
+    --color-najvabox-background: #08bf36;
+    --color-label-text: #707174;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
