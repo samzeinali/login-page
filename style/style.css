@@ -363,7 +363,6 @@ input:focus {
     left: 5%;
     top: 15%;
     cursor: pointer;
-    display: none !important;
 }
 
 .errorText {
