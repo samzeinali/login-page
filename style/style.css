@@ -44,20 +44,7 @@ body {
     width: 100%;
     flex-flow: column;
     background-color: var(--color-background);
-}
-
-.Container_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.logo-image {
-    margin: 24px;
-    width: 146px;
-    height: 43px;
-    cursor: pointer;
+    height: 100vh;
 }
 
 .Container_header {
@@ -73,6 +60,7 @@ body {
     font-size: 1.8rem;
     color: #431E75;
     font-family: peyda;
+    margin-top: 40px;
 }
 
 .Container_formbox {
@@ -83,6 +71,7 @@ body {
     align-items: center;
     box-shadow: 0 2px 4px 0 #00000021;
     border-radius: 5px;
+    margin-top: 40px;
 }
 
 .formbox {
@@ -92,7 +81,6 @@ body {
     align-items: center;
     flex-flow: column;
     padding: 32px 10px;
-    /* background-color: red; */
 }
 
 .labbel {
@@ -308,42 +296,9 @@ input:focus {
     background-color: #f3ecec96;
 }
 
-.Container_change {
-    margin-top: 16px;
-    margin-bottom: 100px;
-    padding: 5px 30px 0px 30px;
-}
-
-.ChangeLoginBox {
-    margin: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.ChangeLoginBox_description {
-    color: #444;
-    font-size: 1.4rem;
-    font-family: var(--font-text-DanaVF);
-    font-weight: 400;
-}
-
-.ChangeLoginBox_link-ancher {
-    color: #3AC582;
-    font-size: 1.4rem;
-    font-family: var(--font-text-DanaVF);
-    font-weight: 500;
-    text-decoration: none;
-    padding-right: 10px;
-}
-
-.ChangeLoginBox_link-ancher:hover {
-    color: #188e80;
-    text-shadow: 2px 2px #0000002b;
-}
-
 .iamgeContainer {
     display: none;
-    background-image: url(../assests/image/LoginPage-7e9940927ba1a0f7bacb9e7c61bea9d3.jpg);
+    background-image: url(../assests/image/nody-عکس-از-کتاب-1622640391.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 75%;

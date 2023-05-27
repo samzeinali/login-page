@@ -51,4 +51,15 @@ InputPassword.addEventListener('change', checkPassword);
 function checkPassword() {
     let InputValue = InputPassword.value;
     let RegexPassword = /^(?=.*[\d])(?=.*[a-z])(?=.*[A_Z])[a-zA-Z\d]{8}$/;
+    if (!RegexPassword.test(InputValue)) {
+        let errorElement = $.createElement('span');
+        errorElement.innerText += 'رمز باید شامل اعداد و حروف باشد';
+        errorElement.className = 'errorText';
+        errorElement.id = 'errorNameMail';
+        console.log(errorElement);
+        InputPasswordBox.append(errorElement);
+        InputPassword.style.border = '1px solid red'
+    } else {
+        InputPassword.style.border = '2px solid lightgreen'
+    }
 }
