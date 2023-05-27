@@ -335,7 +335,7 @@ input:focus {
     font-size: 1.3rem;
     background-color: #bcb6b611;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     cursor: pointer;
     display: none;
 }
