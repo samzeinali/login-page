@@ -329,6 +329,26 @@ input:focus {
     margin-bottom: 5px;
     cursor: pointer;
 }
+.errorTextName {
+    font-family: var(--font-text-DanaVF);
+    color: #f36262;
+    font-size: 1.3rem;
+    background-color: #bcb6b611;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
+.errorTextPassword {
+    font-family: var(--font-text-DanaVF);
+    color: #f36262;
+    font-size: 1.3rem;
+    background-color: #bcb6b611;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
 
 .errorText:hover {
     color: red;
