@@ -43,7 +43,7 @@ function showHidePassword() {
 InputPassword.addEventListener('change', checkPassword);
 function checkPassword() {
     let InputValue = InputPassword.value;
-    let RegexPassword = /^(?=.*[\d])(?=.*[a-z])(?=.*[A_Z])[a-zA-Z\d]{8}$/;
+    let RegexPassword = /^(?=.*[\d])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8}$/;
     if (!RegexPassword.test(InputValue)) {
         errorPassword.style.display = "unset";
         InputPassword.style.border = '1px solid red'
