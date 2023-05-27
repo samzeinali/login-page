@@ -6,6 +6,8 @@ let ShowPasswordIcon = $.querySelector('.fa-eye-slash');
 let ButtonLogin = $.querySelector('.formbox_button');
 let InputNameBox = $.querySelector('.formbox_name');
 let InputPasswordBox = $.querySelector('#passwordbox');
+let errorName = $.querySelector('.errorTextName');
+let errorPassword = $.querySelector('.errorTextPassword');
 
 InputNameOrEmail.addEventListener('change', chekNameAndMail)
 
@@ -14,22 +16,13 @@ function chekNameAndMail() {
     let RegexName = /^[a-zA-Z]{3,15}$/;
     let RegexMail = /^([A-Za-z\d]*)?([._])?([a-zA_Z\d]+)(@)([a-z]+)\.(com|ir|me|co|net|org|shop|xyz)$/;
     if (RegexName.test(InputValue)) {
-        if($.querySelector('#errorNameMail')){
-            $.querySelector('#errorNameMail').remove(); 
-        }
+        errorName.style.display = "none";
         InputNameOrEmail.style.border = '2px solid lightgreen'
     } else if (RegexMail.test(InputValue)) {
-        if($.querySelector('#errorNameMail')){
-            $.querySelector('#errorNameMail').remove(); 
-        }
+        errorName.style.display = "none";
         InputNameOrEmail.style.border = '2px solid green'
     } else {
-        let errorElement = $.createElement('span');
-        errorElement.innerText += 'مقدار وارد شده صحیح نیست';
-        errorElement.className = 'errorText';
-        errorElement.id = 'errorNameMail';
-        console.log(errorElement);
-        InputNameBox.append(errorElement);
+        errorName.style.display = "unset";
         InputNameOrEmail.style.border = '1px solid red'
     }
 }
@@ -52,14 +45,10 @@ function checkPassword() {
     let InputValue = InputPassword.value;
     let RegexPassword = /^(?=.*[\d])(?=.*[a-z])(?=.*[A_Z])[a-zA-Z\d]{8}$/;
     if (!RegexPassword.test(InputValue)) {
-        let errorElement = $.createElement('span');
-        errorElement.innerText += 'رمز باید شامل اعداد و حروف باشد';
-        errorElement.className = 'errorText';
-        errorElement.id = 'errorNameMail';
-        console.log(errorElement);
-        InputPasswordBox.append(errorElement);
+        errorPassword.style.display = "unset";
         InputPassword.style.border = '1px solid red'
     } else {
         InputPassword.style.border = '2px solid lightgreen'
+        errorPassword.style.display = "none";
     }
 }
